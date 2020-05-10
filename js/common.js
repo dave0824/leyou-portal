@@ -546,6 +546,9 @@ const ly = leyou = {
             return localStorage.removeItem(key);
         }
     },
+    verify(){
+        return this.http.get("/auth/verify")
+    },
     /**
      * 将整数价格变为小数
      * @param val
